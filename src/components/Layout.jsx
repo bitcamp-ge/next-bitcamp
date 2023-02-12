@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import clsx from 'clsx'
 
 import { Hero } from '@/components/Hero'
+import { HeroReact101 } from '@/components/HeroReact101'
 import { Logo, Logomark } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
@@ -16,7 +17,13 @@ const navigation = [
     title: 'დასაწყისი',
     links: [
       { title: 'სასწავლო და სამენტორო პროგრამები', href: '/' },
-      { title: 'მენტორის აყვანა', href: '/docs/installation' },
+      { title: 'BitCamp 101', href: '/101' },
+      { title: 'React 101', href: '/react-101' },
+      { title: 'BitCamp PRO', href: '/pro' },
+      { title: 'BitCamp Reactor', href: '/reactor' },
+      { title: 'მენტორის აყვანა', href: '/mentorship' },
+      { title: 'BitCamp Python', href: '/python' },
+      { title: 'BitCamp AI', href: '/ai' },
     ],
   },
 ]
@@ -119,6 +126,7 @@ function useTableOfContents(tableOfContents) {
 export function Layout({ children, title, tableOfContents }) {
   let router = useRouter()
   let isHomePage = router.pathname === '/'
+  let isReact101Page = router.pathname === '/react-101'
   let allLinks = navigation.flatMap((section) => section.links)
   let linkIndex = allLinks.findIndex((link) => link.href === router.pathname)
   let previousPage = allLinks[linkIndex - 1]
@@ -143,6 +151,7 @@ export function Layout({ children, title, tableOfContents }) {
       <Header navigation={navigation} />
 
       {isHomePage && <Hero />}
+      {isReact101Page && <HeroReact101 />}
 
       <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
@@ -178,7 +187,7 @@ export function Layout({ children, title, tableOfContents }) {
             {previousPage && (
               <div>
                 <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-                  Previous
+                  წინა
                 </dt>
                 <dd className="mt-1">
                   <Link
@@ -193,7 +202,7 @@ export function Layout({ children, title, tableOfContents }) {
             {nextPage && (
               <div className="ml-auto text-right">
                 <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-                  Next
+                  შემდეგი
                 </dt>
                 <dd className="mt-1">
                   <Link
