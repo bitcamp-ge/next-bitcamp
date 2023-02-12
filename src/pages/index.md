@@ -1,114 +1,50 @@
 ---
-title: Getting started
-pageTitle: CacheAdvance - Never miss the cache again.
+title: სასწავლო და სამენტორო პროგრამები
+pageTitle: BitCamp - სწავლა და ბრძოლა 🔥✊
 description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
 ---
 
-Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free. {% .lead %}
+ჩვენი სასწავლო და სამენტორო პროგრამები განკუთვნილია როგორც 0 - იდან დამწყებთათვის, ასევე იმ გამოცდილი დეველოპერებისთვის ვისაც სურს კარიერის ახალ ეტაპზე გადასვლა. 
+
+სასწავლო პროგრამები **სრულიად უფასოა** და ნებისმიერ მსურველს შეუძლია მათი გამოყენება. 
+
+სამენტორო პროგრამები **ფასიანია** და მათი შეძენის შემთხვევაში გეყოლებათ მენტორი რომელიც დაგეხმარებათ რთული გზის სწრაფად გავლაში. 
+{% .lead %}
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
+{% quick-link title="BitCamp 101" icon="installation" href="/101" description="ჰარვარდისა და ჰელსინკის უნივერსიტეტების გაერთიანებული სალექციო კურსი და სამენტორო სერვისი მათთვის ვინც 0 - იდან იწყებს როგორც პროგრამირების ისე ვებ ტექნოლოგიების შესწავლას." /%}
 
-{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
+{% quick-link title="React 101" icon="presets" href="/" description="React - თანამედროვე ვებ-კომპონენტების ბიბლიოთეკაა.  კურსი განკუთვნილია მათთვის ვინც უკვე შეისწავლა პროგრამირებისა და ვებ ტექნოლოგიების საფუძვლები და სურს ახალ ეტაპზე გადასვლა." /%}
 
-{% quick-link title="Plugins" icon="plugins" href="/" description="Extend the library with third-party plugins or write your own." /%}
+{% quick-link title="BitCamp PRO" icon="plugins" href="/" description="სუპერ ინტენსიური სამენტორო სერვისი მხოლოდ მათთვის ვისაც ბევრი დრო აქვს (დღეში მინიმუმ 8 საათი) და სურს რომ სწრაფად მიაღწიოს მაქსიმალურ შედეგს." /%}
 
-{% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
+{% quick-link title="BitCamp Reactor" icon="theming" href="/" description="სუპერ ინტენსიური სამენტორო სერვისი მათთვის ვისაც React - ის პროფესიონალურ დონეზე დაუფლება სურს." /%}
 
 {% /quick-links %}
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
 
----
 
-## Quick start
+{% callout title="ცოდნა • შრომა • თავისუფლება 🔥✊" %}
+ვფიქრობთ რომ პროგრამირების ცოდნა ძალიან მნიშვნელოვანია თანამედროვე ადამიანისთვის - შესაბამისად ვქმნით ისეთ გარემოს სადაც ადამიანები ვითარდებიან, აღწევენ წარმატებას და ქმნიან მეტ ღირებულებას როგორც პირადად მათთვის ასევე მათი ოჯახის წევრების, მეგობრებისა და ახლობლებისთვის. ასეთ საზოგადოებაში ადამიანები მეტად მზრუნველები ხდებიან. ისინი მზად არიან ნებისმიერ დროს მიიღონ ახალი წევრი, დაეხმარონ მას პირველი ნაბიჯების გადადგმასა და პირველი წარმატების მიღწევაში. 
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
-
-### Installing dependencies
-
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
-
-```shell
-npm install @tailwindlabs/cache-advance
-```
-
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
-
-{% callout type="warning" title="Oh no! Something bad happened!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
-{% /callout %}
-
-### Configuring the library
-
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
-
-```js
-// cache-advance.config.js
-export default {
-  strategy: 'predictive',
-  engine: {
-    cpus: 12,
-    backups: ['./storage/cache.wtf'],
-  },
-}
-```
-
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
-
-{% callout title="You should know!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
+ჩვენ ვაგვარებთ პროგრამირების და კომპიუტერული მეცნიერების სწავლის პრობლემას ერთხელ და სამუდამოდ!
 {% /callout %}
 
 ---
 
-## Basic usage
+## კურსები მართლა უფასოა?
 
-Praesentium laudantium magni. Consequatur reiciendis aliquid nihil iusto ut in et. Quisquam ut et aliquid occaecati. Culpa veniam aut et voluptates amet perspiciatis. Qui exercitationem in qui. Vel qui dignissimos sit quae distinctio.
+დიახ! მართლა უფასოა.   ეს ის შემთხვევაა როცა უფასო არ ნიშნავს უხარისხოს. უფრო მეტიც - ჩვენ პრეტენზია გვაქვს რომ ჩვენი უფასო კურსები მინიმუმ 10 - ჯერ უკეთესია ვიდრე ნებისმიერი ფასიანი კურსი საქართველოში. იმის მაგივრად რომ ათასობით ლარის გადახდა გაგარისკინოთ, ჩვენ იმდენად ვართ დარწმუნებული ჩვენი კურსების და სერვისების მაღალ ხარისხში რომ ყველა ლექცია, დავალება და სასწავლო რესურსი უფასოდ, საჯაროდ და ყოველგვარი რეგისტრაციის გარეშეა ხელმისაწვდომი. არაფერი გვაქვს დასამალი. ნახეთ, ისწავლეთ, გამოიყენეთ როგორც გაგიხარდეთ და რამდენი ხნითაც გინდათ. როცა დარწმუნდებით რომ ჩვენ ნამდვილად ვიცით რას ვაკეთებთ, შეგიძლიათ ჩვენი სამენტორო სერვისები შეიძინოთ დამატებით. 
 
-### Your first cache
+## მენტორის აყვანა ძვირი ჯდება?
 
-Minima vel non iste debitis. Consequatur repudiandae et quod accusamus sit molestias consequatur aperiam. Et sequi ipsa eum voluptatibus ipsam. Et quisquam ut.
+თუ 0 - დან იწყებთ, არ შეგეშინდეთ 🙏 ჩვენთან ურთიერთობა ათასობით ლარი ნამდვილად არ დაგიჯდებათ. ჩვენ გვესმის რომ პირველი ნაბიჯების გადადგმა ყოველთვის რთულია. ვერ დავუშვებთ რომ უაზროდ ბევრი ფული გამოგართვათ და თავი იმით ვიმართლოთ რომ "იცი რა ღირს ასეთი მომსახურება ამერიკაში/ევროპაში?" - ამას გეუბნებიან ქართული აკადემიები და კურსები. ჩვენ გვესმის რომ საქარველოში ვცხოვრობთ და ამიტომ ჩვენი მაქსიმუმი გავაკეთეთ რომ მენტორის მომსახურება თვეში 100 ლარამდე ჩამოგვეწია და ჩვენ ეს შევძელით! დღეს უკვე ასობით სტუდენტი და ათეულობით მენტორი გვყავს და BitCamp 101 - ის სამენტორო მომსახურება მხოლოდ 100 ლარი ღირს თვეში. 
 
-Qui quae esse aspernatur fugit possimus. Quam sed molestiae temporibus. Eum perferendis dignissimos provident ea et. Et repudiandae quasi accusamus consequatur dolore nobis. Quia reiciendis necessitatibus a blanditiis iste quia. Ut quis et amet praesentium sapiente.
+რომ შეადაროთ, სხვაგან თუ მხოლოდ სალექციო კურსები 600-700 ლარიდან იწყება, ჩვენთან სალექციო კურსები სრულიად უფასოა და დამატებით სამენტორო მომსახურება კი მხოლოდ 100 ლარი ღირს თვეში.
 
-Atque eos laudantium. Optio odit aspernatur consequuntur corporis soluta quidem sunt aut doloribus. Laudantium assumenda commodi.
+ერთგვარი გემოს გასასინჯი/უსაფრთხოდ საცდელი გარემო შევქმენით სადაც თუ ისე აღმოჩნდება რომ ვერ მოერგეთ სიტუაციას, მხოლოდ 100 ლარს გარისკავთ მაგრამ თუ მოახერხებთ საკუთარ თავზე მუშაობას, ჩვენ ყველაფერს გავაკეთებთ, მენტორების არმიას დაგახვედრებთ და თქვენი წარმატებისთვის ბოლომდე ვიბრძოლებთ თქვენს მხარდამხარ!
 
-### Clearing the cache
-
-Vel aut velit sit dolor aut suscipit at veritatis voluptas. Laudantium tempore praesentium. Qui ut voluptatem.
-
-Ea est autem fugiat velit esse a alias earum. Dolore non amet soluta eos libero est. Consequatur qui aliquam qui odit eligendi ut impedit illo dignissimos.
-
-Ut dolore qui aut nam. Natus temporibus nisi voluptatum labore est ex error vel officia. Vero repellendus ut. Suscipit voluptate et placeat. Eius quo corporis ab et consequatur quisquam. Nihil officia facere dolorem occaecati alias deleniti deleniti in.
-
-### Adding middleware
-
-Officia nobis tempora maiores id iusto magni reprehenderit velit. Quae dolores inventore molestiae perspiciatis aut. Quis sequi officia quasi rem officiis officiis. Nesciunt ut cupiditate. Sunt aliquid explicabo enim ipsa eum recusandae. Vitae sunt eligendi et non beatae minima aut.
-
-Harum perferendis aut qui quibusdam tempore laboriosam voluptatum qui sed. Amet error amet totam exercitationem aut corporis accusantium dolorum. Perspiciatis aut animi et. Sed unde error ut aut rerum.
-
-Ut quo libero aperiam mollitia est repudiandae quaerat corrupti explicabo. Voluptas accusantium sed et doloribus voluptatem fugiat a mollitia. Numquam est magnam dolorem asperiores fugiat. Soluta et fuga amet alias temporibus quasi velit. Laudantium voluptatum perspiciatis doloribus quasi facere. Eveniet deleniti veniam et quia veritatis minus veniam perspiciatis.
-
----
-
-## Getting help
-
-Consequuntur et aut quisquam et qui consequatur eligendi. Necessitatibus dolorem sit. Excepturi cumque quibusdam soluta ullam rerum voluptatibus. Porro illo sequi consequatur nisi numquam nisi autem. Ut necessitatibus aut. Veniam ipsa voluptatem sed.
-
-### Submit an issue
-
-Inventore et aut minus ut voluptatem nihil commodi doloribus consequatur. Facilis perferendis nihil sit aut aspernatur iure ut dolores et. Aspernatur odit dignissimos. Aut qui est sint sint.
-
-Facere aliquam qui. Dolorem officia ipsam adipisci qui molestiae. Error voluptatem reprehenderit ex.
-
-Consequatur enim quia maiores aperiam et ipsum dicta. Quam ut sit facere sit quae. Eligendi veritatis aut ut veritatis iste ut adipisci illo.
-
-### Join the community
-
-Praesentium facilis iste aliquid quo quia a excepturi. Fuga reprehenderit illo sequi voluptatem voluptatem omnis. Id quia consequatur rerum consectetur eligendi et omnis. Voluptates iusto labore possimus provident praesentium id vel harum quisquam. Voluptatem provident corrupti.
-
-Eum et ut. Qui facilis est ipsa. Non facere quia sequi commodi autem. Dicta autem sit sequi omnis impedit. Eligendi amet dolorum magnam repudiandae in a.
-
-Molestiae iusto ut exercitationem dolorem unde iusto tempora atque nihil. Voluptatem velit facere laboriosam nobis ea. Consequatur rerum velit ipsum ipsam. Et qui saepe consequatur minima laborum tempore voluptatum et. Quia eveniet eaque sequi consequatur nihil eos.
+{% callout type="warning" title="არ გადაყაროთ ათასობით ლარი მხოლოდ სალექციო კურსში!" %}
+საქმე იმაშია რომ ქართული კომპანიები ბოროტად სარგებლობენ თქვენი არასაკმარისი ინფორმირებულობით. გიხატავენ უზრუნველ მომავალს და გთავაზობენ სალექციო კურსებს რომლებიც სუპერ ძვირი ღირს. ისინი მართლები არიან იმაში რომ ტექნოლოგიების სფერო ძალიან მომგებიანია, მაგრამ! მხოლოდ სალექციო კურსით წარმატებას ვერ მიაღწევთ. დამატებით საჭიროა პრაქტიკული მუშაობა და ბევრი შრომა - ამას არავინ გეუბნებათ წინასწარ. როცა დავალებებისა და პროექტების კეთებისას გაიჭედებით, ხშირად ძალიან ძნელია დამოუკიდებლად გაგრძელება და იმდენ დროს და ნებისყოფას მოითხოვს რომ თუ მარტო იქნებით დიდი შანსია დანებდეთ. ჩვენ სწორედ ამიტომ უარი ვთქვით ლექციების გაყიდვაზე და მათი უფასოდ გამოქვეყნება დავიწყეთ. არ გვინდა მოგატყუოთ. მაგრამ არც ის გვინდა რომ წარუმატებლობისთვის გაგწიროთ. ჩვენი მიზანია რაც შეიძლება მეტმა ქართველმა ისწავლოს პროგრამირება და გახდეს ფინანსურად წარმატებული - ამიტომ ყველზე რთული მომენტების გადასალახად შევქმენით სამენტორო სერვისები. ლექციების შემდეგ ნასწავლ მასალას პროექტების კეთებისას გაიმყარებთ და რასაც ვერ გაიგებთ, თუ სადმე აიჭედებით ან უბრალოდ ემოციურად სხვა ადამიანის თანადგომა დაგჭირდებათ, ჩვენი მენტორების გუნდი მუდმივად თქვენს გვერდითაა და გეხმარებით ყველა სიტუაციის გადალახვაში ❤️ ჩვენ მართლა გვინდა გიხილოთ წარმატებულნი რადგან თქვენი წარმატება ნიშნავს ჩვენს წარმატებას!
+{% /callout %}
