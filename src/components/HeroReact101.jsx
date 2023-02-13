@@ -55,7 +55,8 @@ export function HeroReact101() {
                 ისწავლე React - ი საქართველოში საუკეთესო სალექციო კურსით. აიყვანე მენტორი და იმუშავე პროექტებზე პროფესიონალებთან ერთად, ყოველდღიურ რეჟიმში.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="#content">დაიწყე სწავლა</Button>
+                <Button variant='secondary' href="#content">დაიწყე სწავლა</Button>
+                <Button target="_blank" href="https://platform.bitcamp.ge">აიყვანე მენტორი →</Button>
               </div>
             </div>
           </div>

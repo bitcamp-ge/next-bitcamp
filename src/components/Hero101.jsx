@@ -55,7 +55,8 @@ export function Hero101() {
               ჰარვარდისა და ჰელსინკის უნივერსიტეტების გაერთიანებული სასწავლო კურსები პროგრამირებასა და ვებ-ტექნოლოგიებში - მათთვის ვინც 0 - დან იწყებს.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="#content">დაიწყე სწავლა</Button>
+                <Button variant={'secondary'} href="#content">დაიწყე სწავლა</Button>
+                <Button target="_blank" href="https://platform.bitcamp.ge">აიყვანე მენტორი → </Button>
               </div>
             </div>
           </div>
