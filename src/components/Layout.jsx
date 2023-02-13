@@ -5,6 +5,7 @@ import clsx from 'clsx'
 
 import { Hero } from '@/components/Hero'
 import { HeroReact101 } from '@/components/HeroReact101'
+import { Hero101 } from '@/components/Hero101'
 import { Logo, Logomark } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
@@ -127,6 +128,7 @@ export function Layout({ children, title, tableOfContents }) {
   let router = useRouter()
   let isHomePage = router.pathname === '/'
   let isReact101Page = router.pathname === '/react-101'
+  let is101 = router.pathname === '/101'
   let allLinks = navigation.flatMap((section) => section.links)
   let linkIndex = allLinks.findIndex((link) => link.href === router.pathname)
   let previousPage = allLinks[linkIndex - 1]
@@ -152,8 +154,9 @@ export function Layout({ children, title, tableOfContents }) {
 
       {isHomePage && <Hero />}
       {isReact101Page && <HeroReact101 />}
+      {is101 && <Hero101 />}
 
-      <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
+      <div id='content' className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
           <div className="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />

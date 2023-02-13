@@ -55,7 +55,7 @@ export function Hero() {
                 ჰარვარდისა და ჰელსინკის უნივერსიტეტების გაერთიანებული სასწავლო კურსები პროგრამირებასა და ვებ-ტექნოლოგიებში.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">დაიწყე სწავლა</Button>
+                <Button href="#content">დაიწყე სწავლა</Button>
               </div>
             </div>
           </div>

@@ -32,7 +32,7 @@ function TrafficLightsIcon(props) {
   )
 }
 
-export function HeroReact101() {
+export function Hero101() {
   return (
     <div className="overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:mt-[-4.75rem] dark:lg:pt-[4.75rem]">
       <div className="py-16 sm:px-2 lg:relative lg:py-20 lg:px-0">
@@ -49,10 +49,10 @@ export function HeroReact101() {
             />
             <div className="relative">
               <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                React 101
+                BitCamp 101
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
-                ისწავლე React - ი საქართველოში საუკეთესო სალექციო კურსით. აიყვანე მენტორი და იმუშავე პროექტებზე პროფესიონალებთან ერთად ყოველდღიურ რეჟიმში.
+              ჰარვარდისა და ჰელსინკის უნივერსიტეტების გაერთიანებული სასწავლო კურსები პროგრამირებასა და ვებ-ტექნოლოგიებში - მათთვის ვინც 0 - დან იწყებს.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="#content">დაიწყე სწავლა</Button>
@@ -90,7 +90,7 @@ export function HeroReact101() {
                 <div className="p-4">
                   <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30" />
                   <div className="mt-6 flex items-start px-1 text-sm">
-                  <iframe className='rounded-2xl' width="560" height="315" src="https://www.youtube.com/embed/BgNijTjQWPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
+                    <iframe className='rounded-2xl' width="560" height="315" src="https://www.youtube.com/embed/PhjJw5Rh8Wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>         
                   </div>
                 </div>
               </div>
