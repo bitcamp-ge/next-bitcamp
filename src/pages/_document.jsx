@@ -40,7 +40,7 @@ const themeScript = `
 
 export default function Document() {
   return (
-    <Html className="antialiased [font-feature-settings:'ss01'] scroll-smooth" lang="en">
+    <Html className="antialiased [font-feature-settings:'ss01'] scroll-smooth dark" lang="en">
       <Head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
