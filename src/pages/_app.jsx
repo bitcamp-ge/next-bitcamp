@@ -80,7 +80,7 @@ export default function App({ Component, pageProps }) {
       {/* <!-- Your Chat Plugin code --> */}
       <div id="fb-customer-chat" className="fb-customerchat">
       </div>
-      <Script>
+      <Script id='fb-customer-chatbox-script'>
         {`
         var chatbox = document.getElementById('fb-customer-chat');
         chatbox.setAttribute("page_id", "108103453902596");
@@ -89,7 +89,7 @@ export default function App({ Component, pageProps }) {
       </Script>
 
       {/* <!-- Your SDK code --> */}
-      <Script>
+      <Script id='fb-customer-chat-script'>
         {`window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
@@ -109,8 +109,8 @@ export default function App({ Component, pageProps }) {
 
 
       {/* <!-- Google tag (gtag.js) --> */}
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-168888380-1"></Script>
-      <Script>{`
+      <Script id='ga-external-script' async src="https://www.googletagmanager.com/gtag/js?id=UA-168888380-1"></Script>
+      <Script id='ga-script'>{`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
