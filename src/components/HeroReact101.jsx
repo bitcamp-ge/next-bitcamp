@@ -52,7 +52,7 @@ export function HeroReact101() {
                 React 101
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
-                ისწავლე React - ი საქართველოში საუკეთესო სალექციო კურსით. აიყვანე მენტორი და იმუშავე პროექტებზე პროფესიონალებთან ერთად ყოველდღიურ რეჟიმში.
+                ისწავლე React - ი საქართველოში საუკეთესო სალექციო კურსით. აიყვანე მენტორი და იმუშავე პროექტებზე პროფესიონალებთან ერთად, ყოველდღიურ რეჟიმში.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="#content">დაიწყე სწავლა</Button>
