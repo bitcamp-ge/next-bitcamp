@@ -54,7 +54,7 @@ export function ThemeSelector(props) {
       setSelectedTheme(
         themes.find(
           (theme) =>
-            theme.value === document.documentElement.getAttribute('data-theme')
+            theme.value === 'dark'
         )
       )
     }
@@ -64,7 +64,7 @@ export function ThemeSelector(props) {
     let handler = () =>
       setSelectedTheme(
         themes.find(
-          (theme) => theme.value === (window.localStorage.theme ?? 'system')
+          (theme) => theme.value === 'dark'
         )
       )
 
