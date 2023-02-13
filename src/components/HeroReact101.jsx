@@ -91,7 +91,7 @@ export function HeroReact101() {
                 <div className="p-4">
                   <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30" />
                   <div className="mt-6 flex items-start px-1 text-sm">
-                  <iframe className='rounded-2xl' width="560" height="315" src="https://www.youtube.com/embed/BgNijTjQWPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
+                  <iframe className='rounded-2xl' width="100%" height="315" src="https://www.youtube.com/embed/BgNijTjQWPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
                   </div>
                 </div>
               </div>
