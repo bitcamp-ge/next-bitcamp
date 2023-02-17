@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { Hero } from '@/components/Hero'
 import { HeroReact101 } from '@/components/HeroReact101'
 import { Hero101 } from '@/components/Hero101'
+import { HeroPython } from '@/components/HeroPython'
 import { Logo, Logomark } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
@@ -15,15 +16,15 @@ import { ThemeSelector } from '@/components/ThemeSelector'
 
 const navigation = [
   {
-    title: 'დასაწყისი',
+    title: 'სასწავლო პროგრამები',
     links: [
       { title: 'სასწავლო და სამენტორო პროგრამები', href: '/' },
       { title: 'BitCamp 101', href: '/101' },
+      { title: 'BitCamp Python', href: '/python' },
       { title: 'React 101', href: '/react-101' },
       { title: 'BitCamp PRO', href: '/pro' },
       { title: 'BitCamp Reactor', href: '/reactor' },
       { title: 'მენტორის აყვანა', href: '/mentorship' },
-      { title: 'BitCamp Python', href: '/python' },
       { title: 'BitCamp AI', href: '/ai' },
     ],
   },
@@ -129,6 +130,7 @@ export function Layout({ children, title, tableOfContents }) {
   let isHomePage = router.pathname === '/'
   let isReact101Page = router.pathname === '/react-101'
   let is101 = router.pathname === '/101'
+  let isPython = router.pathname === '/python'
   let allLinks = navigation.flatMap((section) => section.links)
   let linkIndex = allLinks.findIndex((link) => link.href === router.pathname)
   let previousPage = allLinks[linkIndex - 1]
@@ -155,6 +157,7 @@ export function Layout({ children, title, tableOfContents }) {
       {isHomePage && <Hero />}
       {isReact101Page && <HeroReact101 />}
       {is101 && <Hero101 />}
+      {isPython && <HeroPython />}
 
       <div id='content' className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
